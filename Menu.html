@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+
+<head>
+    <title> El.merch Menu </title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="title" content="chi'sburger">
+    <meta name="description" content="menu de Restaurant de berger a setif">
+    <meta name="keywords" content="berger,setif,restaurant,pizza,chi'sburger,dessert,menu,fast food,Viking Donuts,Donuts,Donut,">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="author" content="raya">
+    <link href="clipart1336363.png" rel="icon"/>
+    <link href="clipart1336363.png" rel="shotcut"/>
+    <link href="clipart1336363.png" rel="apple-touch-icon"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <style>
+          #sc {
+            position: fixed;
+            top: 84%;
+            right: 20px;
+        }
+
+        #c {
+            position: fixed;
+            top: 76%;
+            right: 25px;
+
+        }
+
+        #upbtn {
+            width: 40px;
+            height: 40px;
+        }
+
+
+        footer img {
+            width: 50px;
+            height: 50px;
+            margin: 20px;
+        }
+
+        body {
+            background-image: url('Bandeau-001.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        main {
+            margin-bottom: 10px;           
+            align-items: center !important;
+        }
+
+        .navbar-brand {
+            font-size: 23px;
+          }
+
+      #img_card{
+        padding: 8px;
+      }
+      #btn1,#btn2,#btn3{
+        width: 11%;
+    font-size: 26px;
+    border-radius: 13px;
+    padding: 4px 25px 10px 25px;
+    margin: 16px 40px 16px 40px;
+    background-color: #68525296;
+    COLOR: WHITE;
+      }
+      #button:hover{
+        background-color: #EE741D;
+      }
+      .card{
+        margin:2%;
+        width: 12rem;
+         padding: 9%;
+          background-color:
+           chocolate; 
+           border-radius: 12px;
+      }
+      #prix{
+        font-weight: bold;
+        float:right;
+        padding-top: 1%;
+        margin-bottom: -6%;
+        color: #EE741D;
+        font-size:22px;
+      }
+      #btns{
+        margin-top:3%; 
+        left: 24%; 
+        POSITION: relative;
+      }
+      #b1{
+        display: flex; 
+         justify-content: space-around;
+          margin-bottom: 6%;
+          margin-left: 0%;
+      }
+      #name{
+        font-weight: bold;
+         font-size:23px;
+      }
+      #b1-1{
+        color:aliceblue;
+        width: 12rem;
+      }
+
+        @media screen and (width: 390px){
+            body{
+                background-position: 31%;
+            }
+            #btns{
+            margin-top: 3%;
+            left: 2%;
+            position: relative;
+           }
+           #btn1, #btn2, #btn3 {
+            width: 25%;
+            font-size: 18px;
+            border-radius: 13px;
+            padding: 2px 1px 8px 2px;
+            margin: 16px 13px 16px 13px;
+           }
+           #b1{
+        display: grid;
+          }
+        }
+      @media screen and (min-width: 514px){
+        #sc {
+            top:83%;
+            }
+            #btns {
+          margin-top: 3%;
+          left: 2%;
+            }
+            #btn1, #btn2, #btn3 {
+                width: 26%;
+               font-size: 27px;
+
+            }
+            .navbar-brand {
+            font-size: 33px;
+          }
+        
+        }
+        @media screen and (width: 540px){
+          #b2 {
+          justify-content: space-around;
+          display: grid;
+          margin-left: 3%;
+           }
+        }
+        @media screen and (min-width: 912px){
+            #btns {
+             margin-top: 3%;
+             left: 10%;
+         }
+         #btn1,#btn2,#btn3{
+            width: 25%;
+            font-size: 30px;
+            padding: 4px 15px 10px 15px;
+           margin: 16px 15px 16px 15px;
+           }
+           .navbar-brand {
+            font-size: 42px;
+           }
+           #b1{
+            display: flex;
+            margin-bottom: 0px;
+           }
+           #btns {
+            margin-top: 5%;
+           }
+           #b2{
+            justify-content: space-around;
+           margin-left: 14%;
+          }
+          #b1{
+            justify-content: space-around;
+            display: flex;
+            margin-left: 12%;
+          }
+          }
+
+        @media screen and (min-width: 280px){
+           footer img {
+            width: 30px;
+            height: 30px;
+            margin: 12px;
+            }
+            .navbar-brand {
+            font-size: 26px;     
+          }
+          #btn1, #btn2, #btn3 {
+          width: 27%;
+          font-size: 15px;
+          padding: 4px 8px 10px 7px;
+          margin: 16px 7px 16px 7px;
+          }
+          #b1{
+          margin-left: 2%;
+          display: grid;
+          }
+          #b1-1{
+            width: 10rem;
+            margin-bottom: 13%;
+          }
+          .card{
+            width: 10rem;
+            padding: 9%;
+          }
+          #btns{
+            left:0%;
+          }
+          #b2{
+          margin-left: 22%;
+        }
+        #b3{
+          margin-left: 22%;
+        }
+          #sc {
+          right: 3px;
+          }
+          #c {
+        right: 8px;
+        }
+
+      }
+        @media screen and (width: 360px){
+           footer img {
+            width: 38px;
+            height: 38px;
+            margin: 18px;
+           }
+         
+          #c {
+            top: 78%;
+            right: 10px;
+            }
+         #sc {
+            right: 7px;
+            }
+            #b1{
+         display: grid;
+         }
+         #btns{
+          left: 1%; 
+         POSITION: relative;
+         }
+         #btn1, #btn2, #btn3 {
+          width: 29%;
+          font-size: 19px;
+          padding: 4px 15px 10px 15px;
+          margin: 16px 5px 16px 5px;
+         }
+         #b1{
+        display: grid;
+        margin-left: 1%;
+      }
+
+      #b2{
+            justify-content: space-around;
+            display: grid;
+            margin-left: 1%;
+          }
+     #b3{
+            justify-content: space-around;
+            display: grid;
+            margin-left: 1%;
+          }
+          body{
+                background-position: 30%;
+            }
+                }
+        @media screen and (min-width: 1024px){
+          #btn1, #btn2, #btn3 {
+                   width: 11%;
+               font-size: 26px;
+              border-radius: 13px;
+               padding: 4px 25px 10px 25px;
+              margin: 16px 40px 16px 40px;
+                }
+            #c {
+            top:81%;
+            right: 10px;
+            }
+         #sc {
+            top:83%;
+            }
+            .navbar-brand {
+                font-size: 22px;
+              }
+        }
+        @media screen and (min-width: 375px){
+            footer img {
+            width: 40px;
+            height: 40px;
+            margin: 19px;
+         }
+         #c {
+            top:79%;
+            right: 13px;
+            }
+         #sc {
+            top:86%;
+            right: 7px;
+            }
+            body{
+                background-position: 30%;
+            }
+
+         #b1{
+         display: grid;
+         margin-left: 5%;
+         }
+          #btn1, #btn2, #btn3 {
+          width: 25%;
+         font-size: 18px;
+         border-radius: 13px;
+         padding: 2px 1px 8px 2px;
+         margin: 16px 13px 16px 13px;
+         }
+         #btns{
+         margin-top: 3%;
+         left: 2%;
+         position: relative;
+         }
+       
+          #b2{
+            justify-content: space-around;
+            display: grid;
+            margin-left: 5%;
+          }
+          #b3{
+            justify-content: space-around;
+            display: grid;
+            margin-left: 3%;
+          }
+        }
+        @media screen and (min-width: 414px){ 
+            footer img {
+            width: 40px;
+            height: 40px;
+            margin: 19px;
+        }
+        body{
+            background-position: 30%;
+        }
+        
+       #btn1, #btn2, #btn3 {
+        width: 25%;
+        font-size: 18px;
+        border-radius: 13px;
+        padding: 3px 23px 9px 23px;
+        margin: 16px 15px 16px 15px;
+        }
+        #btns{
+       margin-top: 3%;
+        left: 0%;
+      }
+            #c {
+              top: 81%;
+            }
+        #sc {
+            top:86%;
+            }
+            #b1{
+        display: grid;
+      }
+       }
+        @media screen and (min-width: 768px) {
+            footer img {
+            width: 50px;
+            height: 50px;
+            margin: 25px;
+        }
+         #btns {
+             margin-top: 3%;
+              left: 8%;
+         }
+        #c {
+            top:77%;
+            right: 10px;
+            }
+        #sc {
+            top:81%;
+            }
+        #btn1,#btn2,#btn3{
+            width: 25%;
+            font-size: 30px;
+            padding: 4px 15px 10px 15px;
+           margin: 16px 15px 16px 15px;
+           }
+           .navbar-brand {
+            font-size: 32px;
+           }
+           #b2{
+            justify-content: space-around;
+            display: flex;
+            margin-left:0%;
+          }
+          #b3{
+            justify-content: space-around;
+            display: flex;
+            MARGIN-LEFT: 0%;
+          }
+          #b1{
+            justify-content: space-around;
+            display: flex;
+            MARGIN-LEFT: 0%;
+          }
+         
+        }
+        @media screen and (width: 820px) {
+            footer img {
+            width: 55px;
+            height: 55px;
+            margin: 25px;
+          }
+           
+         #btns {
+             margin-top: 3%;
+              left: 8%;
+              POSITION: relative;
+         }
+           #c {
+            top:81%;
+            right: 10px;
+            }
+           #sc {
+            top:85%;
+            }
+          #berger{
+            margin-top: 20%;
+           }
+           #btn1,#btn2,#btn3{
+            width: 25%;
+            font-size: 30px;
+            padding: 4px 15px 10px 15px;
+           margin: 16px 15px 16px 15px;
+           }
+           body{
+            background-position: 31%;
+           }
+           #b2{
+            justify-content: space-around;
+            display: flex;
+            margin-left: 8%;
+          }
+          #b3{
+            justify-content: space-around;
+            display: flex;
+          }
+          #b1{
+            justify-content: space-around;
+            display: flex;
+          }
+          #b1-1 {
+          width: 12rem;
+          }
+      }
+      @media screen and (min-width: 1280px) {
+         
+        #sc {
+            position: fixed;
+            top: 84%;
+            right: 20px;
+        }
+
+        #c {
+            position: fixed;
+            top: 76%;
+            right: 30px;
+
+        }
+         
+       }
+  
+    </style>
+</head>
+
+<body>
+
+    <header id="header" style="height:20% !important;">
+        <nav class="navbar navbar-expand-lg navbar navbar-light " >
+            <a class="navbar-brand" style="font-weight: bold; color:#EE741D ;" href="index.html">El.merch </a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" style="font-weight: bold !important; color:#EE741D ;" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="font-weight: bold !important; color:#EE741D ;" href="Menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="font-weight: bold !important; color:#EE741D ;" href="#footer">About us</a>
+                    </li>
+                </ul>
+            </div>
+            <button style="background-color: #EE741D; border-color:#CE9B76;" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+    </header>
+  
+
+    <a id="sc" href="#header"> <span
+            style="color: #b45511; text-decoration: none; font-size: 50px !important;"
+            class="material-icons md-48">arrow_circle_up</span></a><br>
+
+    <a id="c" href="tel: 0793 57 11 12"> <img id="upbtn"
+        src="telephone.png"></a>
+
+
+    <main  style="border-width: 2px; border-radius: 20px; border-style: solide; border-color: #EE741D;">
+    
+     <div id="btns"  >
+        <button onclick="berger()" id="btn1" >Burgers</button>
+        <button onclick="Frites()" id="btn2" >Frites </button>
+        <button onclick="Baguette()" id="btn3">Baguette </button>
+     </div>
+
+      <div id="berger" style=" justify-content: space-around; margin-top: 6%; margin-bottom: 10%; ">
+          <div id="b1" >
+            <div id="b1-1" >
+                <div class="card" >
+                <img id="img_card" src="berger_mix.png">  </div>
+                <p style="padding: 2%;"><spam id="name"> Burger mix</spam><br>Fromage, salade, tomate, oeuf, 33g viande, poulet. <br><spam id="prix" >300DA</spam></p>
+           </div>
+           <div id="b1-1">
+             <div class="card" >
+             <img id="img_card" src="cheeseburger.png">  </div>
+             <p style="padding: 2%;"><spam id="name"> Burger American</spam><br>Fromage, salade, tomate, oeuf, 100g viande, camembert. <br><spam id="prix" >500DA</spam></p>
+           </div>
+            <div id="b1-1">
+                <div class="card" >
+                <img id="img_card" src="italian.png">  </div>
+                <p style="padding: 2%;"><spam id="name"> Burger italian</spam><br>Fromage, salade, tomate, oeuf, 33g viande + gruyére. <br><spam id="prix" >400DA</spam></p>
+           </div>
+           <div id="b1-1">
+             <div class="card">
+             <img id="img_card" src="pnQgegg.png">  </div>
+             <p style="padding: 2%;"><spam id="name"> Burger classique</spam><br>Fromage, salade, tomate, oeuf, 33g viande, frites. <br><spam id="prix" >200DA</spam></p>
+           </div>
+          </div>
+
+          <div id="b1" >
+             <div id="b1-1">
+                <div class="card" >
+                <img id="img_card" src="pngegg (1).png">  </div>
+                <p style="padding: 2%;"><spam id="name">El marcho donut</spam><br>Fromage, salade, tomate, gruyére, 50g viande, poulet. <br><spam id="prix" >400DA</spam></p>
+             </div  style="display: flex;">
+             <div id="b1-1">
+              <div class="card"  >
+              <img id="img_card" src="clipart1336363.png">  </div>
+              <p style="padding: 2%;"><spam id="name">Burger Mexican</spam><br>Fromage, salade, tomate, poivre, 100g viande, gruyére. <br><spam id="prix" >400DA</spam></p>
+             </div>
+             <div id="b1-1">
+                <div class="card"  >
+                <img id="img_card" src="clipart1336363.png">  </div>
+                <p style="padding: 2%;"><spam id="name">Crunch wrap</spam><br>Fromage, salade, tomate, frites, 100g viande + gruyére. <br><spam id="prix" >400DA</spam></p>
+             </div>
+             <div id="b1-1">
+              <div class="card"  >
+              <img id="img_card" src="clipart1336363.png">  </div>
+              <p style="padding: 2%;"><spam id="name">Big mix</spam><br>Fromage, salade, tomate, 100g viande, 100g poulet, gruyére. <br><spam id="prix" >550DA</spam></p>
+             </div>
+           </div>
+
+           <div id="b1" >
+            <div id="b1-1">
+               <div class="card">
+               <img id="img_card" src="200.png">  </div>
+               <p style="padding: 2%;"><spam id="name">Burger 200g</spam><br>salade, tomate, 200g viande, slayer. <br><spam id="prix" >600DA</spam></p>
+            </div  style="display: flex;">
+            <div id="b1-1">
+             <div class="card"  >
+             <img id="img_card" src="300.png">  </div>
+             <p style="padding: 2%;"><spam id="name"> Burger 300g</spam><br>Fromage, salade, tomate, 300g viande, camembert +gruyére + mozzarella. <br><spam id="prix" >999DA</spam></p>
+            </div>
+            <div id="b1-1">
+               <div class="card"  >
+               <img id="img_card" src="pngegg (1)k.png">  </div>
+               <p style="padding: 2%;"><spam id="name">Burger allemand</spam><br>Fromage, salade, tomate, sauce fromage. <br><spam id="prix" >400DA</spam></p>
+            </div>
+            <div id="b1-1">
+             <div class="card"  >
+             <img id="img_card" src="clipart1336363.png">  </div>
+             <p style="padding: 2%;"><spam id="name"> Burger algerien</spam><br>Fromage, tomate, 100g viande, mozzarella. <br><spam id="prix" >400DA</spam></p>
+            </div>
+          </div>
+
+          <div id="b1" >
+            <div id="b1-1">
+               <div class="card" >
+               <img id="img_card" src="pngegg (1).png">  </div>
+               <p style="padding: 2%;"><spam id="name">Burger scottish</spam><br>Fromage, salade, tomate, gruyére crispy, 100g viande. <br><spam id="prix" >450DA</spam></p>
+            </div  style="display: flex;">
+            <div id="b1-1">
+             <div class="card"  >
+             <img id="img_card" src="clipart1336363.png">  </div>
+             <p style="padding: 2%;"><spam id="name"> Burger vegetables</spam><br>pois chiche, haricot rouge, lentilles, oignon, echalate, poivron. <br><spam id="prix" >350DA</spam></p>
+            </div>
+            <div id="b1-1">
+               <div class="card"  >
+               <img id="img_card" src="pngefgg.png">  </div>
+               <p style="padding: 2%;"><spam id="name"> Burger francais</spam><br>Fromage, salade, tomate, 100g viande, gruyére. <br><spam id="prix" >450DA</spam></p>
+            </div>
+            <div id="b1-1">
+             <div class="card"  >
+             <img id="img_card" src="berger.png">  </div>
+             <p style="padding: 2%;"><spam id="name"> ???</spam><br>Fromage, salade, tomate, oeuf, 33g viande, frites. <br><spam id="prix" >200DA</spam></p>
+            </div>
+          </div>
+
+          <div id="b1" >
+            <div id="b1-1">
+               <div class="card" >
+               <img id="img_card" src="el marcho.png">  </div>
+               <p style="padding: 2%;"><spam id="name">El marcho burger</spam><br>Fromage, salade, tomate, gruyére+ camembert, viande farce. <br><spam id="prix" >650DA</spam></p>
+            </div>
+            <div id="b1-1">
+             <div class="card"  >
+             <img id="img_card" src="pnngegg.png">  </div>
+             <p style="padding: 2%;"><spam id="name"> Burger</spam><br>salade, tomate, 100g viande, dinde fumé. <br><spam id="prix" >500DA</spam></p>
+            </div>
+          </div>
+      </div>
+
+        <div id="Frites" style="display: none;  margin-top: 6%;  margin-bottom: 10%;">
+          <div id="b2" >
+            <div id="b1-1">
+                <div class="card" >
+                <img id="img_card" src="pngxxegg.png">  </div>
+                <p style="padding: 2%;"><spam id="name"> Frites simple</spam><br><spam id="prix" >60/120DA</spam></p>
+          </div>
+          <div id="b1-1">
+            <div class="card"  >
+            <img id="img_card" src="pngxxegg.png">  </div>
+            <p style="padding: 2%;"><spam id="name"> Frites 3fromages</spam> <br><spam id="prix" >380DA</spam></p>
+           </div>
+            <div id="b1-1">
+                <div class="card"  >
+                <img id="img_card" src="pngxxegg.png">  </div>
+                <p style="padding: 2%;"><spam id="name"> Frites sauce fromage</spam> <br><spam id="prix" >200DA</spam></p>
+          </div>
+          <div id="b1-1">
+            <div class="card"  >
+            <img id="img_card" src="pngxxegg.png">  </div>
+            <p style="padding: 2%;"><spam id="name"> Burger classique</spam><br>Fromage, salade, tomate, oeuf, 33g viande, frites. <br><spam id="prix" >200DA</spam></p>
+         </div>
+        </div>
+        
+      </div>
+
+        <div id="Baguette" style="display: none; justify-content: space-around; margin-top: 6%; margin-bottom: 8%;">
+          <div id="b3" style="justify-content: space-around;">
+            <div id="b1-1">
+                <div class="card" >
+                <img id="img_card" src="pngxegg (3).png">  </div>
+                <p style="padding: 2%;"><spam id="name"> Baguette de mozzarella</spam><br><spam id="prix" >200DA</spam></p>
+          </div>
+          <div id="b1-1">
+            <div class="card"  >
+            <img id="img_card" src="pngxegg (3).png">  </div>
+            <p style="padding: 2%;"><spam id="name"> Baguette de gruyere</spam> <br><spam id="prix" >200DA</spam></p>
+      </div>
+            <div id="b1-1">
+                <div class="card"  >
+                <img id="img_card" src="pngxegg (3).png">  </div>
+                <p style="padding: 2%;"><spam id="name"> Baguette fondue</spam> <br><spam id="prix" >200DA</spam></p>
+          </div>
+        </div>
+   </div>
+
+    </main>
+
+
+
+    <footer class="text-center text-white" id="footer">
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!-- Section: Iframe -->
+            <section class="">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="ratio ratio-16x9">
+                            <a href="tel: 036 51 49 94 "> <img
+                                    src="telephone.png"></a>
+                            <a href="https://goo.gl/maps/p7GNW8dxGLjNVnrS6" target="blank"> <img
+                                    src="location.png"> </a>
+                            <a href="https://www.instagram.com/chisburger19/?hl=fr" target="blank"> <img
+                                    src="instagram.png"></a>
+                            <a href="https://www.facebook.com/CHISBURGER19/" target="blank"> <img
+                                    src="facebook1.png"></a>
+                        </div>
+                    </div>
+            </section>
+        </div>
+        </div>
+
+    </footer>
+
+<script>
+  var A = document. getElementById("berger"); 
+  var B = document. getElementById("Frites");
+  var C= document.getElementById("Baguette");
+  var btn1 = document. getElementById("btn1"); 
+  var btn2 = document. getElementById("btn2");
+  var btn3= document.getElementById("btn3");
+  
+  function berger(){
+   A.style.display="block";
+   B.style.display="none";
+   C.style.display="none";
+   btn1.style.background="#EE741D";   
+   btn2.style.background="#68525296";
+   btn3.style.background="#68525296";
+  }
+  function Frites(){
+   A.style.display="none";
+   B.style.display="block";
+   C.style.display="none";
+   btn2.style.background="#EE741D";   
+   btn1.style.background="#68525296";
+   btn3.style.background="#68525296";
+  }
+  function Baguette(){
+   A.style.display="none";
+   B.style.display="none";
+   C.style.display="block";
+   btn3.style.background="#EE741D";   
+   btn2.style.background="#68525296";
+   btn1.style.background="#68525296";
+  }
+
+</script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
